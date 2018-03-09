@@ -1,0 +1,25 @@
+buildscript {
+    repositories {
+        google()
+        jcenter()
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.0.1'
+        classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.8.0'
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+    }
+}
+
+ext {
+    compileSdkVersion = 27
+    targetSdkVersion = compileSdkVersion
+    minSdkVersion = 14
+    supportLibVersion = '27.0.2'
+}

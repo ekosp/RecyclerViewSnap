@@ -1,0 +1,22 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+
+    defaultConfig {
+        applicationId "com.github.rubensousa.recyclerviewsnap"
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+    }
+}
+
+dependencies {
+    implementation project(':gravitysnaphelper')
+
+    implementation "com.android.support:design:$rootProject.ext.supportLibVersion"
+    implementation "com.android.support:appcompat-v7:$rootProject.ext.supportLibVersion"
+    implementation "com.android.support:recyclerview-v7:$rootProject.ext.supportLibVersion"
+    implementation "com.android.support:cardview-v7:$rootProject.ext.supportLibVersion"
+}
